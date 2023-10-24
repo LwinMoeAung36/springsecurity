@@ -12,5 +12,16 @@ public class MainController {
 	public String startingPoint() {
 		return "Hello";
 	}
+	@GetMapping("admin")
+	@ResponseBody
+	public String adminPoint() {
+		return "Hello Admin";
+	}
+	
+	@GetMapping("user")
+	@ResponseBody
+	public String userPoint() {
+		return "Hello User";
+	}
 
 }
